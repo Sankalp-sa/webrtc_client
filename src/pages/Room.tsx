@@ -66,7 +66,7 @@ export const Room = () => {
         const a = document.createElement("a");
         a.style.display = "none";
         a.href = url;
-        a.download = screen-recording-${new Date().toISOString()}.webm;
+        a.download = `screen-recording-${new Date().toISOString()}.webm`;
         document.body.appendChild(a);
         a.click();
 
