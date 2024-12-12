@@ -10,6 +10,7 @@ import { NameInput } from "../common/Name";
 import { ws } from "../ws";
 import { UserContext } from "../context/UserContext";
 import { ChatContext } from "../context/ChatContext";
+import { RecordView } from "../components/RecordView";
 
 export const Room = () => {
     const { id } = useParams();
@@ -74,6 +75,7 @@ export const Room = () => {
                 <ShareScreenButton onClick={shareScreen} />
                 <ChatButton onClick={toggleChat} />
             </div>
+            {/* <RecordView />  */}
         </div>
     );
 };
